@@ -110,3 +110,4 @@ def delete_book(book_id: int, session: Session = Depends(get_session)):
     session.delete(book)
     session.commit()
     return {"message": "Libro eliminado"}
+
